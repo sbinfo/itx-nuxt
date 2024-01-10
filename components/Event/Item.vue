@@ -4,12 +4,12 @@ console.log(props)
 </script>
 
 <template>
-	<div class="flex bg-accent p-3 my-4 rounded">
+	<div class="flex bg-accent p-4 mb-4 rounded border border-itx-border">
 		<div class="flex items-center mr-4">
 			<img :src="event.image" alt="" class="w-48 min-w-48 max-w-48 rounded" />
 		</div>
 		<div>
-			<h3 class="text-xl text-itx-success leading-tight mb-1">
+			<h3 class="text-xl text-itx-success font-semibold leading-tight mb-1">
 				{{ event.title }}
 			</h3>
 			<div class="flex justify-between w-60 text-itx-secondary text-sm mb-2">
