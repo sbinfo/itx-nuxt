@@ -3,6 +3,13 @@ export default {
 	content: [],
 	theme: {
 		extend: {},
+		colors: {
+			"itx-heading": "#fff",
+			"itx-success": "#24e9b3",
+			"itx-primary": "#25f3f5",
+			"itx-secondary": "#8a8a8a",
+			"itx-warning": "#e5901d",
+		},
 	},
 	daisyui: {
 		themes: [

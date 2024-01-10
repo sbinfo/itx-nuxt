@@ -7,11 +7,11 @@ import { MENU_DATA } from "@/components/layout/Navbar/menu.data"
 		<div class="navbar max-w-screen-xl mx-auto">
 			<div class="navbar-start">
 				<LayoutNavbarMobileMenu />
-				<a class="btn btn-ghost text-2xl">ITX</a>
+				<a class="btn btn-ghost text-xl">ITX.AZ</a>
 			</div>
 			<div class="navbar-center hidden lg:flex">
 				<ul class="menu menu-horizontal px-1">
-					<li v-for="menu in MENU_DATA" :key="menu.title">
+					<li v-for="menu in MENU_DATA" :key="menu.title" class="mx-1">
 						<NuxtLink :to="menu.link">
 							<span>{{ menu.title }}</span>
 						</NuxtLink>
