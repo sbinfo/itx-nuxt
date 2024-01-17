@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxt/image": "^1.2.0",
     "@nuxtjs/google-fonts": "^3.1.3",
     "@nuxtjs/tailwindcss": "^6.10.3",
     "daisyui": "^4.5.0",
@@ -18,6 +19,8 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "appwrite": "^13.0.1"
+    "@pinia/nuxt": "^0.5.1",
+    "appwrite": "^13.0.1",
+    "pinia": "^2.1.7"
   }
 }
