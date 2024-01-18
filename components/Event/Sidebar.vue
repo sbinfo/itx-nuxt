@@ -1,5 +1,5 @@
 <template>
-	<div class="p-5 ml-6 bg-accent rounded">
+	<div class="p-5 ml-6 border rounded">
 		<EventSidebarFilters />
 		<EventSidebarQuickOpen />
 		<EventSidebarDatePicker />

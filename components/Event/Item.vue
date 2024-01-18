@@ -4,7 +4,7 @@ console.log(props)
 </script>
 
 <template>
-	<div class="flex bg-accent p-4 mb-4 rounded border border-itx-border">
+	<div class="flex p-4 mb-4 rounded border">
 		<div class="flex items-center mr-4">
 			<img :src="event.image" alt="" class="w-48 min-w-48 max-w-48 rounded" />
 		</div>

@@ -3,7 +3,7 @@ import { MENU_DATA } from "@/components/layout/Navbar/menu.data"
 </script>
 
 <template>
-	<div class="bg-accent">
+	<div class="border-b bg-accent">
 		<div class="navbar max-w-screen-xl mx-auto">
 			<div class="navbar-start">
 				<LayoutNavbarMobileMenu />

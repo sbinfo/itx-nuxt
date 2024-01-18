@@ -1,3 +1,23 @@
+<script lang="ts" setup>
+import { useLoadingStore } from "@/stores/loading.store"
+import { account } from "@/utils/appwrite"
+
+const router = useRouter()
+const isLoadingStore = useLoadingStore()
+
+async function logout() {
+	try {
+		isLoadingStore.set(true)
+		await account.deleteSession("current")
+	} catch (error) {
+		console.log("logout error: ", error)
+	} finally {
+		isLoadingStore.set(false)
+		await router.push("auth")
+	}
+}
+</script>
+
 <template>
 	<div class="dropdown dropdown-end">
 		<div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
@@ -19,7 +39,7 @@
 				</a>
 			</li>
 			<li><a>Settings</a></li>
-			<li><a>Logout</a></li>
+			<li><a @click="logout">Logout</a></li>
 		</ul>
 	</div>
 </template>
